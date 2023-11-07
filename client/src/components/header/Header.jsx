@@ -1,68 +1,49 @@
+import { useRef, useState } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
+import AllSections from "./all-sections/AllSections";
+import Nav from "../nav/Nav";
+
 import "./Header.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faSort, faHeart } from '@fortawesome/free-solid-svg-icons'
-import { menuData } from "./menu";
-import { sectionsData } from "./sections";
-import { useState } from "react";
+import useOutsideClick from "../../utils/hooks/useOutsideClisk";
 
 const Header = () => {
-  const [sections, setSections] = useState("none")
-  
-  return <header>
-    <div className="header-content">
-      <div className="header-top-content">
-        <div className="logo">
-          <a href="/"><img src="/logo1.svg" alt="" /></a>
-        </div>
-        <div className="search">
-          <input className="search-input" type="text" placeholder="Որոնում․․․" onChange={(e) => {
+  const [sections, setSections] = useState("none");
+  const sectionsRef = useRef(null);
+  useOutsideClick(sectionsRef, () => {
+    setSections("none");
+  });
 
-          }}/>
-          <div className="all-sections" >
-            <div className="arrows" onClick={() => {
-            if (sections === "none") {
-              setSections("flex")
-            }else{
-              setSections("none")
-            }
-          }}>
-            <p>Բոլոր բաժինները</p>
-              <FontAwesomeIcon icon={faSort} />
-              <div style={{display:sections}} className="sections">
-                {
-                  sectionsData.map(({id, name}) => {
-                    return(
-                      <div className="sectionsLink">
-                        <a href="/">{name}</a>
-                      </div>
-                    )
-                  })
-                }
-              </div>
-            </div>
-            <div className="search-logo">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
+  return (
+    <header>
+      <div className="header-content">
+        <div className="header-top-content">
+          <div className="logo">
+            <a href="/">
+              <img src="/logo1.svg" alt="" />
+            </a>
+          </div>
+          <div className="search">
+            <input
+              className="search-input"
+              type="text"
+              placeholder="Որոնում․․․"
+              onChange={(e) => {}}
+            />
+            <div ref={sectionsRef}>
+              <AllSections sections={sections} setSections={setSections} />
             </div>
           </div>
+          <div className="likes">
+            <FontAwesomeIcon className="heart" icon={faHeart} />
+          </div>
         </div>
-        <div className="likes">
-          <FontAwesomeIcon className="heart" icon={faHeart}/>
-        </div>
+        <Nav />
       </div>
-        <div className="header-bottom-content">
-            <div className="menu">
-              {
-                  menuData.map(({name}) => {
-                      return (
-                        <a href="/">{name}</a>
-                      )
-                   
-                  })
-              }
-            </div>
-        </div>
-    </div>
-  </header>;
+    </header>
+  );
 };
 
 export default Header;
