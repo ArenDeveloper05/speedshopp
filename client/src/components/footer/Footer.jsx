@@ -9,6 +9,7 @@ import { followUs } from "./followus";
 const Footer = () => {
   return (
     <footer>
+      
       <div className="footer-content">
         <div className="footer-categories info">
           <div className="title">
