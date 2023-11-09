@@ -1,5 +1,6 @@
-import "./loginForm.scss";
 import { Link } from "react-router-dom";
+
+import "./LoginForm.scss";
 
 const LorginForm = () => {
   return (

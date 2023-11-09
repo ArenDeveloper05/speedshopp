@@ -1,12 +1,12 @@
-import Sign from "../components/sign/Sign"
-import Layout from "../layout/Layout"
+import Sign from "../components/sign/Sign";
+import Layout from "../layout/Layout";
 
 const SignPage = () => {
   return (
     <Layout>
-        <Sign />
+      <Sign />
     </Layout>
-  )
-}
+  );
+};
 
-export default SignPage
+export default SignPage;

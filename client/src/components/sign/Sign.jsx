@@ -1,20 +1,29 @@
+import { useState } from "react";
+import Login from "./login/Login";
+import LorginForm from "./login/login-form/LoginForm";
+import Register from "./register/Register";
+import RegisterForm from "./register/register-form/Registerform";
+
 import "./Sign.scss";
-import Login from "./login/login";
-import Register from "./register/register";
-import LorginForm from "./login/login-form/loginForm";
-import RegisterForm from "./register/register-form/registerform";
 
 const Sign = () => {
+  const [selectedForm, setSelectedForm] = useState("login");
+
   return (
     <div className="sign">
       <div className="sign-form">
         <div className="sign-top">
-          <Login />
-          <Register />
+          <Login
+            selectedForm={selectedForm}
+            setSelectedForm={setSelectedForm}
+          />
+          <Register
+            selectedForm={selectedForm}
+            setSelectedForm={setSelectedForm}
+          />
         </div>
         <div className="form">
-          <LorginForm />
-          <RegisterForm/>
+          {selectedForm === "login" ? <LorginForm /> : <RegisterForm />}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import "./registerform.scss";
+import "./Registerform.scss";
 
 const RegisterForm = () => {
   return (
