@@ -1,12 +1,11 @@
-import style from './Slider.scss'
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import './Slider.scss'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Slider() {
@@ -35,13 +34,15 @@ export default function Slider() {
                                 վաճառել մեզ հետ
                             </p>
                         </div>
-                        <button className={'slider_content_btn'}>
-                            Իմանալ ավելին
-                            <div className={'slider_btn_icon'}></div>
-                        </button>
+                        <a href={'/'}>
+                            <button className={'slider_content_btn'}>
+                                Իմանալ ավելին
+                                <div className={'slider_btn_icon'}></div>
+                            </button>
+                        </a>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide><img src={'/images/phenixImg.jpg'}/></SwiperSlide>
+                <SwiperSlide><img src={'/images/phenixImg.jpg'} alt={'phenix'}/></SwiperSlide>
             </Swiper>
         </>
     );
