@@ -1,0 +1,33 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  width: 100%;
+  padding: 50px 0;
+  @include flexCenter();
+}
+
+.sign-form {
+  width: 45%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.sign-top {
+  width: 100%;
+  padding-top: 4px;
+  @include flexCenter();
+  background-color: #9457eb;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.form {
+  width: 100%;
+  padding: 100px;
+}
