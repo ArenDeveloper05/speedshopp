@@ -10,12 +10,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Slider() {
     return (
-        <>
+        <div className={'slider'}>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 5000,
+                    delay: 6000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -44,6 +44,6 @@ export default function Slider() {
                 </SwiperSlide>
                 <SwiperSlide><img src={'/images/phenixImg.jpg'} alt={'phenix'}/></SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 }
