@@ -1,0 +1,75 @@
+.username {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.username-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    width: 380px;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 8px;
+    border: 1px solid black;
+  }
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    width: 380px;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 8px;
+    border: 1px solid black;
+  }
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .remember-me {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .remember-checkbox {
+    width: 15px;
+    height: 15;
+  }
+  
+  .button-login {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .login-button {
+   padding: 15px 30px;
+    background-color: #9457eb;
+    color: white;
+    border: 2px solid #9457eb;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+  

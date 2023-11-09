@@ -8,7 +8,6 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
-      
       <div className="footer-content">
         <FooterInfo />
         <FooterMyPage />
