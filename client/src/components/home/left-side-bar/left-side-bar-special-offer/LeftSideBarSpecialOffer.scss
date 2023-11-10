@@ -1,0 +1,101 @@
+.left-side-bar-special-offer{
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+  background-color: #FAFAFAFF;
+  border-radius: 7px;
+  padding: 15px 15px 15px 15px;
+}
+.special_offer_box{
+  width: 100%;
+  height: 200px;
+}
+.special_offer{
+  width: 100%;
+  height: 50%;
+}
+.special_offer_text{
+  background-color: #EDEDEDFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.special_offer_text p{
+  font-size: 25px;
+}
+.special_offer_icon{
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../../public/images/parcent.png");
+  background-size: cover;
+  background-position: center;
+}
+.count_down{
+  display: flex;
+  gap: 15px;
+  padding: 15px 0px 15px 0px;
+}
+.count_down_box{
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #318CE7FF;
+}
+.count_down_box span{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.count_down_box p{
+  font-size: 27px;
+  font-weight: 700;
+}
+.special_offer_slider_cont{
+  width: 100%;
+  height: 300px;
+}
+.special_offer_slider{
+  width: 100%;
+  height: 80%;
+}
+.special_offer_all_btn{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+.special_offer_all_btn button{
+  width: auto;
+  padding: 0 35px 0 35px;
+  height: 45px;
+  background-color: #9457EBFF;
+  color: white;
+  border-radius: 7px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: none;
+  transition: 0.2s;
+}
+.special_offer_all_btn button:hover{
+  background-color: #5C3591;
+}
+.special_offer_slider .swiper{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.swiper img{
+  width: 100%;
+  height: 100%;
+}
