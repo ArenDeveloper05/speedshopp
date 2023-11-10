@@ -1,4 +1,4 @@
-import style from './LeftSideBarCategories.scss'
+import './LeftSideBarCategories.scss'
 
 export default function LeftSideBarCategories(){
     return(
@@ -12,7 +12,7 @@ export default function LeftSideBarCategories(){
                     <a href={'/'}>
                         <div className={'categories_icon_cont'}>
                         <div className={'category1_icon category_icon'}>
-                            <img src={'/images/home.png'}/>
+                            <img src={'/images/home.png'} alt={'category'}/>
                         </div>
                     </div>
                         Անշարժ գույք
@@ -22,7 +22,7 @@ export default function LeftSideBarCategories(){
                     <a href={'/'}>
                         <div className={'categories_icon_cont'}>
                             <div className={'category2_icon category_icon'}>
-                                <img src={'/images/cars.png'}/>
+                                <img src={'/images/cars.png'} alt={'category'}/>
                             </div>
                         </div>
                         Տրանսպորտ
@@ -32,7 +32,7 @@ export default function LeftSideBarCategories(){
                     <a href={'/'}>
                         <div className={'categories_icon_cont'}>
                             <div className={'category3_icon category_icon'}>
-                                <img src={'/images/electronic.png'}/>
+                                <img src={'/images/electronic.png'} alt={'category'}/>
 
                             </div>
                         </div>
@@ -43,7 +43,7 @@ export default function LeftSideBarCategories(){
                     <a href={'/'}>
                         <div className={'categories_icon_cont'}>
                             <div className={'category4_icon category_icon'}>
-                                <img src={'/images/garden.png'}/>
+                                <img src={'/images/garden.png'} alt={'category'}/>
                             </div>
                         </div>
                         Տուն և Այգի

@@ -1,4 +1,4 @@
-import style from './LeftSideBar.scss'
+import './LeftSideBar.scss'
 import LeftSideBarCategories from "./left-side-bar-categories/LeftSideBarCategories";
 import LeftSideBarSpecialOffer from "./left-side-bar-special-offer/LeftSideBarSpecialOffer";
 import Ads from "./ads/Ads";

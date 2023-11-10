@@ -7,15 +7,19 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 // import required modules
-import { EffectCards } from 'swiper/modules'
+import { Autoplay, EffectCards } from 'swiper/modules'
 
 export default function TopProductsSlider(){
     return(
         <div className={'top_products_slider'}>
             <Swiper
+                autoplay={{
+                    delay: 6000,
+                    disableOnInteraction: false,
+                }}
                 effect={'cards'}
                 grabCursor={true}
-                modules={[EffectCards]}
+                modules={[EffectCards, Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide>
