@@ -95,7 +95,11 @@
   border-radius: 7px;
   overflow: hidden;
 }
-.swiper img{
+.special_offer_slider .swiper-slide a{
   width: 100%;
   height: 100%;
+}
+.special_offer_slider .swiper-slide a img{
+  object-fit: cover;
+  object-position: center;
 }

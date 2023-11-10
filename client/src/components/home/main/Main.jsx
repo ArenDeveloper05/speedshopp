@@ -1,16 +1,16 @@
-<<<<<<< HEAD
-import FilterCustom from '../filter_custom/FilterCustom';
-import style from './Main.scss'
-=======
->>>>>>> 767652e585757166b6be1c4343e6e88ce2114714
+import './Main.scss'
+
 import Slider from "./slider/Slider";
 import './Main.scss'
+import TopProductsSlider from "./top-products-slider/TopProductsSlider";
 
 export default function Main(){
     return(
         <div className={'main'}>
             <Slider/>
-            <FilterCustom/>
+            <div className={'main_top_content'}>
+                <TopProductsSlider/>
+            </div>
         </div>
     )
 }

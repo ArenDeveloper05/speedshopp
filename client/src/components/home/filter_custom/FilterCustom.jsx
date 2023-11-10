@@ -1,5 +1,5 @@
 import './FilterCustom.scss'
-import FilteredItems from '../filtered_items/FilteredItems'
+import FilteredItems from './filtered_items/FilteredItems'
 
 export default function FilterCustom(){
 

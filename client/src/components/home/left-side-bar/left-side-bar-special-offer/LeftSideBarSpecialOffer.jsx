@@ -54,10 +54,26 @@ export default function LeftSideBarSpecialOffer(){
                         modules={[Autoplay, Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide><img src={'/images/default.jpg'} alt={'phenix'}/></SwiperSlide>
-                        <SwiperSlide><img src={'/images/default.jpg'} alt={'phenix'}/></SwiperSlide>
-                        <SwiperSlide><img src={'/images/default.jpg'} alt={'phenix'}/></SwiperSlide>
-                        <SwiperSlide><img src={'/images/default.jpg'} alt={'phenix'}/></SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src={'/images/applewatch(1).jpg'} alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src={'/images/imac.jpg'} alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src={'/images/macbook.jpg'} alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src={'/images/iphone15.jpg'} alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
                     </Swiper>
                 </div>
                 <div className={'special_offer_all_btn'}>

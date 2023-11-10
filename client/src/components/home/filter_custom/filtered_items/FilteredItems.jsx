@@ -5,7 +5,7 @@ export default function FilteredItems({context,bgcolor,textColor}){
 
     return(
         <div className='filtered_item_type_box' style={{backgroundColor:bgcolor}}>
-            <a href="#" style={{color:textColor}}>{context}</a>
+            <p style={{color:textColor}}>{context}</p>
         </div>
     );
 
