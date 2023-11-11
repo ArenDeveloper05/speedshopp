@@ -13,7 +13,7 @@ export default function FilterCustom(){
                 <div className='title-right-path'></div>
             </div>
             <div className='filtered_Items'>
-                <FilteredItems context="Բոլորը" bgcolor="#9457EB" textColor="white"/>
+                <FilteredItems context="Բոլորը" bgcolor="#8A22C4" textColor="white"/>
                 <FilteredItems context="Նոր" />
                 <FilteredItems context="Լավագույն" />
                 <FilteredItems context="Զեղչ" />
