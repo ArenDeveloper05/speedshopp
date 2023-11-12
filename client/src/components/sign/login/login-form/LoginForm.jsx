@@ -4,7 +4,7 @@ import "./LoginForm.scss";
 
 const LorginForm = () => {
   return (
-    <div className="username">
+    <div className="user-login">
       <div className="username-form">
         <p>Մուտքանուն կամ էլ-փոստի հասցեն * </p>
         <input className="username-input" type="text" />

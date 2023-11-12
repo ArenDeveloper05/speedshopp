@@ -1,4 +1,5 @@
 import { ROUTER } from "./router/router";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export const navConfig = [
   { id: 1, title: "Գլխավոր", link: ROUTER.HOME_PAGE_ROUTE },
@@ -70,6 +71,7 @@ export const footerMyPageConfig = {
     },
   ],
 };
+
 export const footerProductTagsConfig = {
   title: "Ապրանքի Տեգեր",
   list: [
@@ -111,13 +113,55 @@ export const footerFollowUsConfig = {
   icons: [
     {
       id: 1,
-      icon: "fb icon kdnes stex",
-      link: "fb-i linky kdnes ",
+      icon: <FaFacebookF/>,
+      link: "/",
     },
     {
       id: 2,
-      icon: "insta icon kdnes stex",
-      link: "insta-i linky kdnes ",
+      icon: <FaInstagram/>,
+      link: "/",
     },
   ],
 };
+//top-content
+
+export const upperPartConfig = [
+  {
+    id: 1,
+    name: "English",
+  },
+
+  {
+    id: 2,
+    name: "Русскй",
+  },
+];
+
+//bottom section
+
+export const bottomSectionConfig = [
+  {
+    id: 1,
+    image: "/arca.png",
+  },
+
+  {
+    id: 2,
+    image: "/visa.png",
+  },
+
+  {
+    id: 3,
+    image: "/mastercard.png",
+  },
+
+  {
+    id: 4,
+    image: "/edram.png",
+  },
+
+  {
+    id: 5,
+    image: "/mobi.png",
+  },
+];

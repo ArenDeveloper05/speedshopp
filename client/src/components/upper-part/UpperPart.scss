@@ -1,0 +1,66 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-part {
+  width: 100%;
+  padding: 3px;
+  background-color: #8e94f2;
+  @include flexCenter();
+  justify-content: space-between;
+}
+
+.upper-part-content {
+  @include flexCenter();
+  padding: 5px 10px;
+  gap: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.tel-number {
+  @include flexCenter();
+  padding: 0 10px;
+  gap: 10px;
+  border-right: 1px solid gray;
+}
+
+.account-content {
+  @include flexCenter();
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.account {
+  padding: 0 15px;
+  @include flexCenter();
+  gap: 5px;
+  border-right: 1px solid gray;
+}
+
+.language {
+  cursor: pointer;
+  position: relative;
+}
+
+.languages {
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
+  @include flexCenter();
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 30px;
+  left: -10px;
+}
+
+.language-links {
+  cursor: pointer;
+  font-weight: bold;
+}

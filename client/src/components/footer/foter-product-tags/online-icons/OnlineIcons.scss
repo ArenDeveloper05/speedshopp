@@ -1,0 +1,32 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.online-icons {
+  @include flexCenter();
+  gap: 8px;
+}
+
+.online-icon {
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 100%;
+  @include flexCenter();
+  cursor: pointer;
+  transition: 0.5s;
+
+  .fa-icons-online {
+    color: white;
+  }
+}
+
+.online-icon:hover {
+  background-color: white;
+  .fa-icons-online {
+    color: black;
+  }
+}

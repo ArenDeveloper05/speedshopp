@@ -51,6 +51,11 @@ footer {
 
 .category > a {
   color: white;
+  transition: .5s;
+}
+
+.category > a:hover{
+  color: #1b5ec7;
 }
 
 .category-tags {
@@ -68,4 +73,11 @@ footer {
   background-color: transparent;
   border: 2px solid white;
   color: white;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.category-button:hover{
+  background-color: white;
+  color: #1b5ec7;
 }

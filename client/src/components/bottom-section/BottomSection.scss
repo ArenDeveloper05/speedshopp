@@ -1,0 +1,45 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-section-content {
+  width: 100%;
+  padding: 9px 200px;
+  @include flexCenter();
+  justify-content: space-between;
+  background-color: #111111;
+}
+
+.bottom-section-info {
+  color: white;
+  @include flexCenter();
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.speedshop {
+  color: #1b5ec7;
+  letter-spacing: 1px;
+}
+
+.link {
+  color: #1b5ec7;
+}
+
+.online-payment {
+  @include flexCenter();
+  gap: 5px;
+}
+
+.payment-method{
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.payment-method:hover{
+    transform: rotate(360deg);
+}

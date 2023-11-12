@@ -1,4 +1,5 @@
 import { footerFollowUsConfig } from "../../../config";
+import OnlineIcons from "../foter-product-tags/online-icons/OnlineIcons";
 
 const FooterFollowUs = () => {
   return (
@@ -21,6 +22,7 @@ const FooterFollowUs = () => {
             );
           })}
       </div>
+      <OnlineIcons/>
     </div>
   );
 };
