@@ -3,42 +3,59 @@ import * as Yup from "yup";
 import { login, register } from "../../../../api/api";
 
 import "./RegisterForm.scss";
-
-const registerSchema = Yup.object().shape({
-  first_name: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  last_name: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  password: Yup.string()
-    .min(2, "Too short")
-    .max(30, "Too long")
-    .required("Required"),
-  password_confirmation: Yup.string()
-    .min(2, "Too short")
-    .max(30, "Too long")
-    .required("Required"),
-});
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const RegisterForm = () => {
+  const { t } = useTranslation();
+
+  const registerSchema = Yup.object().shape({
+    first_name: Yup.string()
+      .min(4, t("validations.short"))
+      .required(t("validations.required")),
+    last_name: Yup.string()
+      .min(4, t("validations.short"))
+      .required(t("validations.required")),
+    email: Yup.string()
+      .email(t("validations.email"))
+      .required(t("validations.required")),
+    phone: Yup.string()
+      .min(8, t("validations.short"))
+      .required(t("validations.required")),
+    password: Yup.string()
+      .min(8, t("validations.short"))
+      .required(t("validations.required")),
+    password_confirmation: Yup.string()
+      .min(8, t("validations.short"))
+      .required(t("validations.required")),
+  });
+  const [errors, setErrors] = useState(null);
+
+  useEffect(() => {
+    alert(JSON.stringify(errors));
+  }, [errors]);
+
   const registerFunction = async (userData) => {
     try {
       const { data } = await register({
         ...userData,
         role: "user",
+        phone: userData.phone.toString(),
       });
-      const x = await login({
+      // if (data.status === 200) {
+      const loginResponse = await login({
         email: userData.email,
         password: userData.password,
       });
-      console.log(x.data);
+      console.log(loginResponse.data);
       console.log(data);
+      // }
+      if (data.errors && Object.keys(data.errors) !== 0) {
+        setErrors(data.errors);
+      }
     } catch (error) {
-      console.log(error);
+      console.log(error, "error");
+      setErrors(error.response.data);
     }
   };
 
@@ -56,10 +73,12 @@ const RegisterForm = () => {
         }}
         validationSchema={registerSchema}
         onSubmit={(values) => {
-          registerFunction(values);
+          if (values.password === values.password_confirmation) {
+            registerFunction(values);
+          }
         }}
       >
-        {({ errors, touched }) => (
+        {({ errors, touched, values }) => (
           <Form className="reg-form">
             <div className="form-row">
               <label htmlFor="fname">Անուն *</label>
@@ -108,6 +127,9 @@ const RegisterForm = () => {
               {errors.password_confirmation && touched.password_confirmation ? (
                 <div>{errors.password_confirmation}</div>
               ) : null}
+              {values.password !== values.password_confirmation && (
+                <div>{t("validations.password_confirmation")}</div>
+              )}
             </div>
             <button className="register-button" type="submit">
               ԳՐԱՆՑՎԵԼ
@@ -115,40 +137,6 @@ const RegisterForm = () => {
           </Form>
         )}
       </Formik>
-
-      {/* <div className="register">
-        <div className="user-data">
-          <div className="user-data-register name">
-            <label>Անուն *</label>
-            <input type="text" />
-          </div>
-          <div className="user-data-register surname">
-            <label>Ազգանուն *</label>
-            <input type="text" />
-          </div>
-          <div className="user-data-register phone-number">
-            <label>Հեռախոսահամար *</label>
-            <input type="tel" />
-          </div>
-        </div>
-        <div className="online-data">
-          <div className="user-data-register email">
-            <label>Էլ-Փոստ *</label>
-            <input type="email" />
-          </div>
-          <div className="user-data-register register-password">
-            <label>Գաղտնաբառ *</label>
-            <input type="password" />
-          </div>
-          <div className="user-data-register repeat-password">
-            <label>Կրկնել Գաղտնաբառը *</label>
-            <input type="password" />
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="button-register">
-        <button className="register-button">ԳՐԱՆՑՎԵԼ</button>
-      </div> */}
     </div>
   );
 };
