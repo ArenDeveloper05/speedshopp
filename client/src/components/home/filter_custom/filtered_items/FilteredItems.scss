@@ -1,0 +1,25 @@
+.filtered_item_type_box{
+    width: 140px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+    border-radius: 7px;
+    background-color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.filtered_item_type_box > p{
+    font-family: sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.filtered_item_type_box:hover{
+    background-color: #5C3591;
+    p{
+        color: white;
+    }
+}
