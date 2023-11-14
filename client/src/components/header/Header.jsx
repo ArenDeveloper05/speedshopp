@@ -9,6 +9,8 @@ import Nav from "../nav/Nav";
 import "./Header.scss";
 import useOutsideClick from "../../utils/hooks/useOutsideClisk";
 
+import speedshopLogo from "../../assets/logos/logo.svg";
+
 const Header = () => {
   const [sections, setSections] = useState("none");
   const sectionsRef = useRef(null);
@@ -22,7 +24,7 @@ const Header = () => {
         <div className="header-top-content">
           <div className="logo">
             <a href="/">
-              <img src="/logo1.svg" alt="" />
+              <img src={speedshopLogo} alt="speedshop-logo" />
             </a>
           </div>
           <div className="search">

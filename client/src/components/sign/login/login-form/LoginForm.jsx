@@ -21,8 +21,8 @@ const LorginForm = () => {
   });
 
   const loginFunction = async (values) => {
-    console.log(values);
     try {
+      console.log(values);
       const { data } = await login(values);
       console.log(data);
     } catch (error) {
