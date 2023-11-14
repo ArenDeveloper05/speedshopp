@@ -1,21 +1,58 @@
 import './BrandsSlider.scss'
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide} from "swiper/react";
 
 export default function BrandsSlider(){
     return(
         <div className={'brand_slider_cont'}>
-            <Swiper watchSlidesProgress={true} slidesPerView={3.850} className="mySwiper">
-                <SwiperSlide>Brand 1</SwiperSlide>
-                <SwiperSlide>Brand 2</SwiperSlide>
-                <SwiperSlide>Brand 3</SwiperSlide>
-                <SwiperSlide>Brand 4</SwiperSlide>
-                <SwiperSlide>Brand 5</SwiperSlide>
-                <SwiperSlide>Brand 6</SwiperSlide>
-                <SwiperSlide>Brand 7</SwiperSlide>
-                <SwiperSlide>Brand 8</SwiperSlide>
-                <SwiperSlide>Brand 9</SwiperSlide>
+            <Swiper watchSlidesProgress={true} spaceBetween={10} slidesPerView={4} className="mySwiper">
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/fastex.png" />
+
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/idram.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/phenixlogo.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/brand1.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/brand2.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/brand3.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/brand4.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/phenixlogo.jpg" />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href={'/'}>
+                        <img src="/images/phenixlogo.jpg"/>
+                    </a>
+                </SwiperSlide>
             </Swiper>
         </div>
     )

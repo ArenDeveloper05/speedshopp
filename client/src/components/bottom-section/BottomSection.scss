@@ -6,9 +6,9 @@
 
 .bottom-section-content {
   width: 100%;
-  padding: 9px 200px;
+  //padding: 9px 200px;
   @include flexCenter();
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #111111;
 }
 

@@ -1,13 +1,15 @@
 .slider{
   width: 100%;
   height: 350px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 7px;
   overflow: hidden;
 }
 .slider .swiper{
   width: 100%;
   height: 100%;
+}
+.slider .swiper-slide{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .swiper img{
   width: 100%;
@@ -66,4 +68,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.swiper-button-next:after{
+  color: #8A22C4;
+}
+.swiper-button-prev:after{
+  color: #8A22C4;
+}
+.swiper-button-next:after{
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #8A22C43A;
+}
+.swiper-button-prev:after{
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #8A22C43A;
+}
+.swiper-pagination-bullet-active{
+  background-color: #8A22C4FF;
 }

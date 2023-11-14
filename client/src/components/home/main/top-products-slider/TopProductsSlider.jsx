@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 // import required modules
-import { Autoplay, EffectCards } from 'swiper/modules'
+import { Autoplay, EffectCards} from 'swiper/modules'
 
 export default function TopProductsSlider(){
     return(
