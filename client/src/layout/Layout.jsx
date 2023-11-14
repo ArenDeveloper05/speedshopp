@@ -6,11 +6,11 @@ import UpperPart from "../components/upper-part/UpperPart";
 const Layout = ({ children }) => {
   return (
     <>
-      <UpperPart/>
+      <UpperPart />
       <Header />
       <main>{children}</main>
       <Footer />
-      <BottomSection/>
+      <BottomSection />
     </>
   );
 };

@@ -113,12 +113,12 @@ export const footerFollowUsConfig = {
   icons: [
     {
       id: 1,
-      icon: <FaFacebookF/>,
+      icon: <FaFacebookF />,
       link: "/",
     },
     {
       id: 2,
-      icon: <FaInstagram/>,
+      icon: <FaInstagram />,
       link: "/",
     },
   ],

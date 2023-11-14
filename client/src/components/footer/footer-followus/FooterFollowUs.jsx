@@ -22,7 +22,7 @@ const FooterFollowUs = () => {
             );
           })}
       </div>
-      <OnlineIcons/>
+      <OnlineIcons />
     </div>
   );
 };
