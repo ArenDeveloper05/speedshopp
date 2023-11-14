@@ -1,0 +1,28 @@
+.top_products_slider{
+  width: 260px;
+  height: 250px;
+}
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 7px;
+  background-color: lightgray;
+  overflow: hidden;
+}
+.top_products_slider .swiper-slide a{
+  width: 100%;
+  height: 100%;
+}
+.top_products_slider .swiper-slide a img{
+  object-fit: cover;
+  object-position: center;
+}

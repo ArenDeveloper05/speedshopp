@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
     <>
       <UpperPart />
       <Header />
+      {/*<PageBanner/>*/}
       <main>{children}</main>
       <Footer />
       <BottomSection />
