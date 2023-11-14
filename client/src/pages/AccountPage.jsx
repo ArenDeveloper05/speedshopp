@@ -1,10 +1,12 @@
-import Layout from '../layout/Layout'
-import AccountAbout from '../components/account-about/AccountAbout'
+import Layout from "../layout/Layout";
+import AccountAbout from "../components/account-about/AccountAbout";
 
 function AccountPage() {
-    return(
-        <AccountAbout/>
-    )
+  return (
+    <Layout>
+      <AccountAbout />
+    </Layout>
+  );
 }
 
-export default AccountPage
+export default AccountPage;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Login from "./login/Login";
 import LorginForm from "./login/login-form/LoginForm";
 import Register from "./register/Register";
-import RegisterForm from "./register/register-form/Registerform";
+import RegisterForm from "./register/register-form/RegisterForm";
 
 import "./Sign.scss";
 
@@ -22,7 +22,7 @@ const Sign = () => {
             setSelectedForm={setSelectedForm}
           />
         </div>
-        <div className="form">
+        <div className="sign-content">
           {selectedForm === "login" ? <LorginForm /> : <RegisterForm />}
         </div>
       </div>

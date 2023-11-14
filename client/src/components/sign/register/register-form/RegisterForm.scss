@@ -1,0 +1,56 @@
+.reg-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  .form-row {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    > div {
+      color: #cc3300;
+    }
+    label {
+      font-size: 18px;
+    }
+    input {
+      height: 46px;
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(224, 224, 224);
+      transition-duration: 0.25s;
+      outline: none;
+      &:focus {
+        border: 1px solid #9457eb;
+      }
+    }
+  }
+  .phone-row {
+    .form-row-phone {
+      display: flex;
+      > select {
+        font-size: 14px;
+        font-weight: 800;
+        padding: 0 4px;
+        border: 1px solid rgb(224, 224, 224);
+        outline: none;
+      }
+      > input {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.register-button {
+  padding: 15px 50px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: #9457eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}

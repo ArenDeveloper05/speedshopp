@@ -1,0 +1,8 @@
+{
+  "validations": {
+    "required": "Required field",
+    "email": "Invalid email",
+    "short": "Too short",
+    "password_confirmation": "Password mismatch"
+  }
+}

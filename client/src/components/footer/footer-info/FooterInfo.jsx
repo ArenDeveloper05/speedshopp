@@ -1,6 +1,9 @@
 import { footerInfoConfig } from "../../../config";
+import { useTranslation } from "react-i18next";
 
 const FooterInfo = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="footer-categories info">
       <div className="title">
