@@ -2,10 +2,11 @@
   width: 100%;
   height: auto;
   margin-top: 90px;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
   background-color: #FAFAFAFF;
   border-radius: 7px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   padding: 15px 15px 15px 15px;
+  position: relative;
 }
 .special_offer_box{
   width: 100%;
@@ -16,14 +17,16 @@
   height: 50%;
 }
 .special_offer_text{
-  background-color: #EDEDEDFF;
+  background-color: #8A22C4;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
+  border-radius: 7px;
 }
 .special_offer_text p{
   font-size: 25px;
+  color: white;
 }
 .special_offer_icon{
   width: 50px;
@@ -45,7 +48,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #318CE7FF;
+  color: #8A22C4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 7px;
 }
 .count_down_box span{
   text-transform: uppercase;
@@ -102,4 +107,23 @@
 .special_offer_slider .swiper-slide a img{
   object-fit: cover;
   object-position: center;
+}
+.swiper-button-next:after{
+  color: #8A22C4;
+}
+.swiper-button-prev:after{
+  color: #8A22C4;
+}
+.swiper-button-next:after{
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #8A22C43A;
+}
+.swiper-button-prev:after{
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #8A22C43A;
+}
+.swiper-pagination-bullet-active{
+  background-color: #8A22C4FF;
 }

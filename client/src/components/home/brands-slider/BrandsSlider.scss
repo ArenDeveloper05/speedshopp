@@ -7,16 +7,18 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-right: 80px;
 }
 .brand_slider_cont .swiper .swiper-slide {
   height: 150px;
   background: lightgray;
   text-align: center;
+  transition: 0.2s;
 
 }
-.brand_slider_cont .swiper-wrapper{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.brand_slider_cont .swiper .swiper-slide:hover{
+  opacity: 0.6;
+}
+.brand_slider_cont .swiper .swiper-slide a img{
+  object-fit: cover;
+  object-position: center;
 }

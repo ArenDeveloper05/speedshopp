@@ -9,12 +9,14 @@
     background-color: white;
     transition: 0.2s;
     cursor: pointer;
+    transform: skew(-30deg);
 }
 
 .filtered_item_type_box > p{
     font-family: sans-serif;
     font-size: 16px;
     text-decoration: none;
+    transform: skew(30deg);
 }
 
 .filtered_item_type_box:hover{

@@ -9,6 +9,7 @@ footer {
   padding: 140px 0;
   background-color: #757bc7;
   @include flexCenter();
+  overflow: hidden;
 }
 
 .footer-content {
@@ -20,7 +21,7 @@ footer {
 }
 
 .footer-categories {
-  width: 300px;
+  width: 100%;
   height: 200px;
   @include flexCenter();
   justify-content: flex-start;

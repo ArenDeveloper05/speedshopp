@@ -1,7 +1,13 @@
 import './FilterCustom.scss'
 import FilteredItems from './filtered_items/FilteredItems'
+import ProductCard from "../product-card/ProductCard";
 
 export default function FilterCustom(){
+
+    const productCards = []
+    for(let i = 0; i < 10; i++){
+        productCards.push(<ProductCard/>)
+    }
 
     return(
         <div className="filter_section">
@@ -19,7 +25,7 @@ export default function FilterCustom(){
                 <FilteredItems context="Զեղչ" />
             </div>  
             <section className='filtered_Section'>
-
+                {productCards}
             </section>
         </div>
     )

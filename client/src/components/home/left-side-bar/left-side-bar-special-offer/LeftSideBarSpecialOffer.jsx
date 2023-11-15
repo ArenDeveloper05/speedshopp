@@ -1,11 +1,16 @@
 import './LeftSideBarSpecialOffer.scss'
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Navigation } from 'swiper/modules';
+
+
+// import required modules
+import {Autoplay, EffectCoverflow, Navigation, Pagination} from 'swiper/modules';
 
 export default function LeftSideBarSpecialOffer(){
     return(
@@ -41,8 +46,11 @@ export default function LeftSideBarSpecialOffer(){
             <div className={'special_offer_slider_cont'}>
                 <div className={'special_offer_slider'}>
                     <Swiper
-                        spaceBetween={30}
+                        effect={'coverflow'}
+                        grabCursor={true}
                         centeredSlides={true}
+                        spaceBetween={0}
+                        slidesPerView={1}
                         autoplay={{
                             delay: 6000,
                             disableOnInteraction: false,
@@ -50,28 +58,61 @@ export default function LeftSideBarSpecialOffer(){
                         pagination={{
                             clickable: true,
                         }}
+                        coverflowEffect={{
+                            rotate: 100,
+                            stretch: 0,
+                            depth: 50,
+                            modifier: 2,
+                            slideShadows: true,
+                        }}
                         navigation={true}
-                        modules={[Autoplay, Navigation]}
+                        modules={[EffectCoverflow, Pagination, Autoplay,Navigation]}
                         className="mySwiper"
                     >
                         <SwiperSlide>
                             <a href={'/'}>
-                                <img src={'/images/applewatch(1).jpg'} alt={'specialOffer'}/>
+                                <img src="/images/imac.jpg" alt={'specialOffer'}/>
                             </a>
                         </SwiperSlide>
                         <SwiperSlide>
                             <a href={'/'}>
-                                <img src={'/images/imac.jpg'} alt={'specialOffer'}/>
+                                <img src="/images/iphone15(1).webp" alt={'specialOffer'}/>
                             </a>
                         </SwiperSlide>
                         <SwiperSlide>
                             <a href={'/'}>
-                                <img src={'/images/macbook.jpg'} alt={'specialOffer'}/>
+                                <img src="/images/iphone15.jpg" alt={'specialOffer'}/>
                             </a>
                         </SwiperSlide>
                         <SwiperSlide>
                             <a href={'/'}>
-                                <img src={'/images/iphone15.jpg'} alt={'specialOffer'}/>
+                                <img src="/images/macbook.jpg" alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src="/images/macbook(1).webp" alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src="/images/applewatch.jpg" alt={'specialOffer'}/>
+
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src="/images/applewatch(1).jpg" alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src="/images/airpods.webp" alt={'specialOffer'}/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a href={'/'}>
+                                <img src="/images/iphone15.jpg" alt={'specialOffer'}/>
                             </a>
                         </SwiperSlide>
                     </Swiper>

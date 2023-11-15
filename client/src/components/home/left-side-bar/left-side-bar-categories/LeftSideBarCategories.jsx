@@ -49,6 +49,26 @@ export default function LeftSideBarCategories(){
                         Տուն և Այգի
                     </a>
                 </li>
+                <li>
+                    <a href={'/'}>
+                        <div className={'categories_icon_cont'}>
+                            <div className={'category4_icon category_icon'}>
+                                <img src={'/images/restaurant.png'} alt={'category'}/>
+                            </div>
+                        </div>
+                        Ռեստորանները
+                    </a>
+                </li>
+                <li>
+                    <a href={'/'}>
+                        <div className={'categories_icon_cont'}>
+                            <div className={'category4_icon category_icon'}>
+                                <img src={'/images/services.png'} alt={'category'}/>
+                            </div>
+                        </div>
+                        Ծառայություններ
+                    </a>
+                </li>
             </ul>
         </div>
     )
