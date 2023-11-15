@@ -3,71 +3,27 @@
   height: 350px;
   border-radius: 7px;
   overflow: hidden;
+  padding: 25px;
+  position: relative;
+}
+.slider_blure{
+  background-color: #8A22C426;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .slider .swiper{
   width: 100%;
   height: 100%;
 }
 .slider .swiper-slide{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 .swiper img{
   width: 100%;
   height: 100%;
-}
-.slider_content{
-  width: 100%;
-  height: 100%;
-  background-image: url("../../../../../public/images/slider-image.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 0 200px 0 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.slider_content_text_area{
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.18);
-  font-weight: 500;
-  font-size: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #f8f8f8;
-  border-radius: 7px;
-}
-.slider_content_btn{
-  width: auto;
-  height: 45px;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid #fff;
-  color: #f8f8f8;
-  display: flex;
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px 10px 20px;
-  font-size: 18px;
-  transition: 0.2s;
-  text-transform: uppercase;
-  gap: 5px;
-}
-.slider_content_btn:hover{
-  background-color: #8A22C434;
-}
-.slider_btn_icon{
-  width: 23px;
-  height: 23px;
-  background-image: url("../../../../../public/images/arrow.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .swiper-button-next:after{
   color: #8A22C4;
